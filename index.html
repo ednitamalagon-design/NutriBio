@@ -795,6 +795,101 @@
   }
   .section-desc.light { color: rgba(255,255,255,0.7); }
   .section-desc.dark { color: rgba(26,26,46,0.65); }
+
+  /* ========= RESPONSIVE MÓVIL ========= */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    .nav { padding: 10px 14px; }
+    .nav-dots { display: none; }
+    .nav-logo { font-size: 0.95rem; }
+    .arrow-btn { width: 34px; height: 34px; font-size: 0.9rem; }
+
+    /* SLIDES base */
+    .slide {
+      padding-top: 56px;
+      overflow-y: auto;
+      align-items: flex-start;
+    }
+    #slide-1 { overflow: auto; align-items: center; }
+
+    /* SLIDE 1 – PORTADA */
+    .portada-inner { padding: 12px 16px 20px; }
+    .leaf-icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .portada-subtitulo { font-size: 0.7rem; letter-spacing: 1px; margin-bottom: 16px; }
+    .portada-titulo { font-size: clamp(2rem, 8vw, 2.8rem); }
+    .portada-meta { grid-template-columns: 1fr 1fr; gap: 8px; max-width: 100%; }
+    .meta-card { padding: 10px 12px; }
+    .meta-value { font-size: 0.78rem; }
+    .portada-badge { font-size: 0.65rem; letter-spacing: 1px; margin-top: 14px; padding: 7px 16px; }
+
+    /* SLIDE 2 – ANÁLISIS */
+    .split-layout { grid-template-columns: 1fr; height: auto; min-height: 100%; }
+    .split-left { padding: 28px 20px 20px; }
+    .split-right { padding: 20px 20px 28px; }
+    .slide-title { font-size: clamp(1.3rem, 5vw, 1.8rem); margin-bottom: 12px; }
+    .slide-text { font-size: 0.82rem; }
+    .insight-list li { font-size: 0.78rem; }
+
+    /* SLIDE 3 – SITUACIÓN PROBLEMA */
+    .full-slide { padding: 12px 16px 24px; height: auto; min-height: 100%; justify-content: flex-start; }
+    .problem-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 14px; }
+    .problem-card { padding: 16px; }
+    .card-icon { font-size: 1.5rem; margin-bottom: 8px; }
+    .card-title { font-size: 1rem; }
+    .card-text { font-size: 0.78rem; }
+
+    /* SLIDE 4 – KANO */
+    .kano-layout { padding: 12px 16px 24px; height: auto; min-height: 100%; justify-content: flex-start; }
+    .kano-title-area { margin-bottom: 14px; }
+    .kano-grid {
+      grid-template-columns: repeat(5, minmax(70px, 1fr));
+      overflow-x: auto;
+      padding-bottom: 8px;
+      gap: 6px;
+    }
+    .kano-bar-label { font-size: 0.55rem; height: auto; min-height: 28px; }
+    .kano-bar { font-size: 0.55rem; padding: 6px 4px; }
+    .kano-category { font-size: 0.55rem; }
+
+    /* SLIDE 5 – TRIZ */
+    .triz-layout { flex-direction: column; padding: 12px 16px 24px; height: auto; min-height: 100%; gap: 16px; align-items: stretch; }
+    .triz-left, .triz-right { flex: none; }
+    .triz-contradiction { padding: 16px; }
+    .solution-card { padding: 16px; }
+    .solution-number { font-size: 1.8rem; }
+
+    /* SLIDE 6 – PROPUESTA DE VALOR */
+    .valor-layout { grid-template-columns: 1fr; height: auto; min-height: 100%; }
+    .valor-left { padding: 28px 20px 20px; }
+    .valor-right { padding: 20px 20px 28px; }
+    .modelo-item { font-size: 0.78rem; padding: 10px 12px; }
+    .ley-box { padding: 14px; margin-bottom: 10px; }
+    .ley-text { font-size: 0.75rem; }
+
+    /* SLIDE 7 – CONCLUSIONES */
+    .conclusion-inner { padding: 12px 16px 24px; max-width: 100%; }
+    .conclu-grid { grid-template-columns: 1fr; gap: 10px; margin: 14px 0; }
+    .conclu-card { padding: 14px; }
+    .conclu-text { font-size: 0.76rem; }
+
+    /* SLIDE 8 – BIBLIOGRAFÍA */
+    .biblio-layout { padding: 12px 16px 24px; height: auto; min-height: 100%; justify-content: flex-start; }
+    .ref-list { gap: 12px; margin-top: 16px; }
+    .ref-text { font-size: 0.76rem; }
+
+    /* Generales */
+    .section-heading { font-size: clamp(1.2rem, 5vw, 1.6rem); }
+    .section-desc { font-size: 0.78rem; }
+    .slide-tag { font-size: 0.6rem; letter-spacing: 2px; }
+  }
+
+  @media (max-width: 420px) {
+    .portada-meta { grid-template-columns: 1fr; }
+    .kano-grid { grid-template-columns: repeat(5, minmax(60px, 1fr)); }
+    .triz-vs { flex-direction: column; gap: 8px; }
+    .vs-badge { align-self: center; }
+  }
 </style>
 </head>
 <body>
